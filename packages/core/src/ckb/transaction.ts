@@ -164,7 +164,7 @@ export class OutPoint {
    * @returns An object representing the outpoint in molecule data format.
    */
 
-  _toMolData(): mol.OutPointType {
+  _toMolData() {
     return {
       txHash: bytesFrom(this.txHash),
       index: numToBytes(this.index, 4),
@@ -304,7 +304,7 @@ export class CellOutput {
    * @returns An object representing the cell output in molecule data format.
    */
 
-  _toMolData(): mol.CellOutputType {
+  _toMolData() {
     return {
       capacity: numToBytes(this.capacity, 8),
       lock: this.lock._toMolData(),
@@ -676,7 +676,7 @@ export class CellInput {
    * @returns An object representing the cell input in molecule data format.
    */
 
-  _toMolData(): mol.CellInputType {
+  _toMolData() {
     return {
       previousOutput: this.previousOutput._toMolData(),
       since: numToBytes(this.since, 8),
@@ -793,7 +793,7 @@ export class CellDep {
    * @returns An object representing the cell dependency in molecule data format.
    */
 
-  _toMolData(): mol.CellDepType {
+  _toMolData() {
     return {
       outPoint: this.outPoint._toMolData(),
       depType: depTypeToBytes(this.depType),
@@ -916,7 +916,7 @@ export class WitnessArgs {
    * @returns An object representing the witness arguments in molecule data format.
    */
 
-  _toMolData(): mol.WitnessArgsType {
+  _toMolData() {
     return {
       lock: apply(bytesFrom, this.lock),
       inputType: apply(bytesFrom, this.inputType),

@@ -195,7 +195,7 @@ export class Script {
    * @returns An object representing the script in molecule data format.
    */
 
-  _toMolData(): mol.ScriptType {
+  _toMolData() {
     return {
       codeHash: bytesFrom(this.codeHash),
       hashType: hashTypeToBytes(this.hashType),
