@@ -1,6 +1,6 @@
 import * as v from "valibot";
-import { Params, Requests } from "./requests.advanced";
-import { RpcResponse } from "./types.advanced";
+import { Params, Requests } from "./requests.advanced.js";
+import { RpcResponse } from "./types.advanced.js";
 
 // accountChange
 export const accountChangeEventName = "accountChange";

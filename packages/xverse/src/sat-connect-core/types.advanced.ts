@@ -2,8 +2,8 @@
 // From https://github.com/secretkeylabs/sats-connect-core/
 
 import * as v from "valibot";
-import type { BtcProvider } from "./provider.advanced";
-import type { Requests, Return } from "./requests.advanced";
+import type { BtcProvider } from "./provider.advanced.js";
+import type { Requests, Return } from "./requests.advanced.js";
 
 export enum BitcoinNetworkType {
   Mainnet = "Mainnet",
