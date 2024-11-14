@@ -8,8 +8,8 @@ import * as v from "valibot";
 import {
   MethodParamsAndResult,
   rpcRequestMessageSchema,
-} from "./types.advanced";
-import { walletTypeSchema } from "./walletMethods.advanced";
+} from "./types.advanced.js";
+import { walletTypeSchema } from "./walletMethods.advanced.js";
 
 export enum AddressPurpose {
   Ordinals = "ordinals",

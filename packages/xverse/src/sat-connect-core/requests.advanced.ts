@@ -6,12 +6,12 @@ import {
   SendTransfer,
   SignMessage,
   SignPsbt,
-} from "./btcMethods.advanced";
+} from "./btcMethods.advanced.js";
 import {
   GetWalletType,
   RenouncePermissions,
   RequestPermissions,
-} from "./walletMethods.advanced";
+} from "./walletMethods.advanced.js";
 
 export interface BtcRequests {
   getInfo: GetInfo;
