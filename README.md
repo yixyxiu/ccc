@@ -106,7 +106,28 @@ We have done everything!
 - [Transfer all native CKB token.](https://live.ckbccc.com/?src=https://raw.githubusercontent.com/ckb-devrel/ccc/refs/heads/master/packages/examples/src/transferAll.ts)
 - [Transfer UDT token.](https://live.ckbccc.com/?src=https://raw.githubusercontent.com/ckb-devrel/ccc/refs/heads/master/packages/examples/src/transferUdt.ts)
 
-## Installing
+## Quick Start with `create-ccc-app` (Recommended)
+
+To quickly bootstrap a new CCC-based application, you can use our CLI tool `create-ccc-app`:
+
+```bash
+# Using npx
+npx create-ccc-app@latest my-ccc-app
+```
+
+```bash
+# Using yarn
+yarn create ccc-app my-ccc-app
+```
+
+```bash
+# Using pnpm
+pnpm create ccc-app my-ccc-app
+```
+
+Follow the prompts to select your preferred framework template and start building your CCC application.
+
+## Manual Installation
 
 We design CCC for both front-end and back-end developers. You need only one package to fulfil all your needs:
 
@@ -126,38 +147,6 @@ For advanced developers, we provided the `cccA` object to fulfil all your needs.
 ```typescript
 import { cccA } from "@ckb-ccc/<package-name>/advanced";
 ```
-
-## Quick Start with `create-ccc-app`
-
-To quickly bootstrap a new CCC-based application, you can use our CLI tool `create-ccc-app`:
-
-```bash
-# Using npx
-npx create-ccc-app@latest my-ccc-app
-
-# Using yarn
-yarn create ccc-app my-ccc-app
-
-# Using pnpm
-pnpm create ccc-app my-ccc-app
-
-# Using bun
-bun create ccc-app my-ccc-app
-```
-
-This will create a new directory `my-ccc-app` with a pre-configured CCC application template, complete with all necessary dependencies and basic setup. The template includes:
-- Basic project structure
-- Essential CCC configurations
-- Example components and utilities
-- Development environment setup
-
-During the setup process, you will be prompted to select one of these popular framework templates:
-- Create React App
-- Next.js 
-
-Choose the framework that best matches your development experience to get started with your CCC application.
-
-After creation, you can find the commands to start the development server in your terminal output.
 
 ## Build and Run
 
